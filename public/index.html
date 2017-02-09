@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todos</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script async src="/js/todos.js"></script>
+
+    <style>
+        #todo-list,
+        .empty {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <h1>Todos</h1>
+        </header>
+        <nav>
+            <ul id="todo-list"></ul>
+        </nav>
+        <form action="/todos" method="post">
+
+            <div>
+                <label for="todo-text"></label>
+                <textarea id="todo-text" name="todo-text"></textarea>
+            </div>
+
+            <div>
+                <button type="submit">create todo</button>
+            </div>
+
+        </form>
+    </section>
+</body>
+</html>
